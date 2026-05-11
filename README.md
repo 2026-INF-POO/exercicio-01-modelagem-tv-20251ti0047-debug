@@ -4,7 +4,7 @@
 
     Uma televisão possui as seguintes características:
     - tamanho de tela (em polegadas);
-    - volume: de 1 a 10 iniciando em 5 (somente no construtor);
+    - volume: de 1 a 10 iniciando em 5;
     - marca;
     - voltagem (220 e 110);
     - canal.
@@ -16,30 +16,27 @@
     - subir e descer canal.
   
 
-   class TV {
-    int tamanho;
-    int volume = 5;
-    string marca;
-    int voltagem;
-    int canal;
+class Tv {
+  int tamanho;
+  int volume = 5;
+  string marca; 
+  int voltagem;
+  int canal;
 
-  int ligarTV(){
-     if (220 x 50){
- }
- 
-   int aumentarVolume(){
-       if (volume < 10){
-           volume++;
-     }
-       return volume;
-}
-
-   int diminuirVolume(){
-        if (volume > 5){ 
-            volume--;
-    }
+  int aumentarvolume() {
+      if ( volume < 10 ) {
+         volume++
+      }
       return volume;
-}
+  }
 
+  int diminuirvolume() {
+      if ( volume > 1 ) {
+          volume--
+      }
+      return volume;
+  }
 
-}
+ int ligar() {
+     int consumo = voltagem * tamanho
+ }
